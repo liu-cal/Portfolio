@@ -1,0 +1,161 @@
+.navbar-background {
+  background-color: #F3EDE9;
+}
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  justify-content: space-between;
+  color: #ffffff;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  justify-content: flex-end;
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    display: block;
+    display: flex;
+  }
+}
+
+.navbar-element {
+  color: #4A4A4A;
+  text-decoration: none;
+  margin: auto;
+}
+
+.navbar-element:hover {
+  text-decoration: none;
+}
+
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #D5D5D5;
+  display: flex;
+  gap: 5rem;
+  padding-left: 5%;
+  height: 4%;
+}
+
+.footer-container {
+  display: flex;
+  width: 85%;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.footer-element {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.footer-images {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.landingpage-container {
+  display: flex;
+  flex-direction: row;
+  height: 40rem;
+}
+
+.aboutpage-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #D9C9BB;
+}
+
+.skillspage-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #858585;
+  width: 85%;
+  margin: auto;
+  height: 40rem;
+}
+
+.blogpage-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 10%;
+}
+
+.blog-input {
+  padding: 3% 4%;
+  background-color: #F3EDE9;
+}
+
+.contactpage-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-cv {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+
+h1,
+h2,
+p {
+  font-family: 'Istok Web';
+}
+
+.project-title {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+.project-description {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-input {
+  padding: 3% 0%;
+  background-color: #F3EDE9;
+  padding-left: 4%;
+}
