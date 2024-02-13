@@ -8,6 +8,7 @@ import lombok.Value;
 @AllArgsConstructor
 @Builder
 public class TestimonialResponseModel {
+    private String testimonialId;
     private String name;
     private String designation;
     private String message;

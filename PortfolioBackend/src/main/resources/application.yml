@@ -20,53 +20,6 @@ logging:
     org.springframework.security: DEBUG
 
 ---
-# for H2 tests
-spring:
-  config:
-    activate:
-      on-profile: h2
-
-  h2:
-    console:
-      enabled: true
-
-  datasource:
-    url: jdbc:h2:mem:defaultdb;DB_CLOSE_DELAY=-1
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
-
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-      dialect: org.hibernate.dialect.MySQL8Dialect
-
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.H2Dialect
-        auto-quote-keyword: true
-
-  sql:
-    init:
-      platform: h2
-      mode: always
-
-frontend:
-  url: http://localhost:3000/
-
-backend:
-  url: http://localhost:8080/
-
-website:
-  domain: localhost
-
-logging:
-  level:
-    org.springframework.data.jpa: DEBUG
-    org.hibernate.SQL: DEBUG
-
----
 #for docker
 
 spring:
@@ -78,7 +31,7 @@ spring:
       add-mappings: false
 
   datasource:
-    url: jdbc:mysql://db-portfolio-do-user-15823121-0.c.db.ondigitalocean.com/defaultdb
+    url: jdbc:mysql://db-portfolio-do-user-15823121-0.c.db.ondigitalocean.com:25060/defaultdb
     username: ${spring.mysql.username}
     password: ${spring.mysql.password}
 
@@ -121,7 +74,7 @@ spring:
     resources:
       add-mappings: false
   datasource:
-    url: jdbc:mysql://db-portfolio-do-user-15823121-0.c.db.ondigitalocean.com/defaultdb
+    url: jdbc:mysql://db-portfolio-do-user-15823121-0.c.db.ondigitalocean.com:25060/defaultdb
     username: ${spring.mysql.username}
     password: ${spring.mysql.password}
 
