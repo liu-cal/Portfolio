@@ -7,6 +7,8 @@ import { toast } from 'react-toastify'
 
 function ContactPage() {
     function sendEmail(e) {
+        e.preventDefault();
+
         let firstName = document.getElementById('first_name').value
         let lastName = document.getElementById('last_name').value
         let email = document.getElementById('email').value
@@ -25,8 +27,6 @@ function ContactPage() {
             })
             return
         }
-
-        e.preventDefault();
 
         emailjs.sendForm('service_94r0tcu', 'template_puvtcsf', e.target, '3mpcJXT0ps68PAu6q')
             .then((result) => {

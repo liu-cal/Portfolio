@@ -93,7 +93,7 @@
   background-color: #858585;
   width: 85%;
   margin: auto;
-  height: 40rem;
+  height: 100rem;
 }
 
 .blogpage-container {
@@ -130,7 +130,10 @@
 
 h1,
 h2,
+h3,
+li,
 button,
+textarea,
 p {
   font-family: 'Istok Web';
 }
@@ -165,4 +168,43 @@ p {
   line-height: 100px;
   margin: 0;
   text-align: center;
+}
+
+.testimonial {
+  background-color: #F3EDE9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add a black shadow */
+  transition: transform 0.3s ease;
+  /* Smooth transition for hover effect */
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  padding: 5%;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  /* Move the testimonial up on hover */
+}
+
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination li.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.pagination li.active {
+  font-weight: bold;
 }
