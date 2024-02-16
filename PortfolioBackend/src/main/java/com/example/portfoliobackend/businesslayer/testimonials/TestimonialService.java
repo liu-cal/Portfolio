@@ -6,6 +6,7 @@ import com.example.portfoliobackend.presentationlayer.testimonials.TestimonialRe
 import java.util.List;
 
 public interface TestimonialService {
-    List<TestimonialResponseModel> getTestimonials();
+    List<TestimonialResponseModel> getAssessedTestimonials();
     TestimonialResponseModel addTestimonial(TestimonialRequestModel testimonialRequestModel);
+    TestimonialResponseModel acceptTestimonial(String testimonialId);
 }

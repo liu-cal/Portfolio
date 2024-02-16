@@ -17,12 +17,17 @@ public class TestimonialController {
     private final TestimonialService testimonialService;
 
     @GetMapping
-    public ResponseEntity<List<TestimonialResponseModel>> getTestimonials(){
-        return ResponseEntity.ok(testimonialService.getTestimonials());
+    public ResponseEntity<List<TestimonialResponseModel>> getAssessedTestimonials(){
+        return ResponseEntity.ok(testimonialService.getAssessedTestimonials());
     }
 
     @PostMapping
     public ResponseEntity<TestimonialResponseModel> addTestimonial(@RequestBody TestimonialRequestModel testimonialRequestModel){
         return ResponseEntity.status(CREATED).body(testimonialService.addTestimonial(testimonialRequestModel));
+    }
+
+    @PutMapping("/{testimonialId}")
+    public ResponseEntity<TestimonialResponseModel> acceptTestimonial(@PathVariable String testimonialId){
+        return ResponseEntity.ok(testimonialService.acceptTestimonial(testimonialId));
     }
 }

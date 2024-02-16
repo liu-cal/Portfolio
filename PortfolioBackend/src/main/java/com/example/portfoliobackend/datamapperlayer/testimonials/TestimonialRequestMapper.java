@@ -10,7 +10,8 @@ import org.mapstruct.Mappings;
 public interface TestimonialRequestMapper {
     @Mappings({
             @Mapping(target = "id", ignore = true),
-            @Mapping(target = "testimonialIdentifier", ignore = true)
+            @Mapping(target = "testimonialIdentifier", ignore = true),
+            @Mapping(target = "status", ignore = true)
     })
     Testimonial requestModelToEntity(TestimonialRequestModel testimonialRequestModel);
 }

@@ -8,6 +8,7 @@ import SkillsPage from './pages/SkillsPage';
 import ContactPage from './pages/Contact';
 import AboutMePage from './pages/AboutMePage';
 import BlogPage from './pages/Blog';
+import ConfirmationPage from './pages/ConfirmationPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Contact" Component={ContactPage} />
           <Route path="/About" Component={AboutMePage} />
           <Route path="/Blog" Component={BlogPage} />
+          <Route path="/Confirmation" Component={ConfirmationPage} />
         </Routes>
       </BrowserRouter>
     </>

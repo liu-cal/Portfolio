@@ -14,7 +14,8 @@ public interface TestimonialResponseMapper {
             @Mapping(expression = "java(testimonial.getTestimonialIdentifier().getTestimonialId())", target = "testimonialId"),
             @Mapping(expression = "java(testimonial.getName())", target = "name"),
             @Mapping(expression = "java(testimonial.getDesignation())", target="designation"),
-            @Mapping(expression = "java(testimonial.getMessage())", target = "message")
+            @Mapping(expression = "java(testimonial.getMessage())", target = "message"),
+            @Mapping(expression = "java(testimonial.getStatus())", target = "status")
     })
     TestimonialResponseModel entityToResponseModel(Testimonial testimonial);
     List<TestimonialResponseModel> entitiesToResponseModels(List<Testimonial> testimonials);

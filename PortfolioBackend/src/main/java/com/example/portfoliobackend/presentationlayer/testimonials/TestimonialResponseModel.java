@@ -1,5 +1,6 @@
 package com.example.portfoliobackend.presentationlayer.testimonials;
 
+import com.example.portfoliobackend.datalayer.testimonials.Status;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Value;
@@ -12,4 +13,5 @@ public class TestimonialResponseModel {
     private String name;
     private String designation;
     private String message;
+    private Status status;
 }

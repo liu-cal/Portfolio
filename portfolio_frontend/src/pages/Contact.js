@@ -28,7 +28,7 @@ function ContactPage() {
             return
         }
 
-        emailjs.sendForm('service_94r0tcu', 'template_puvtcsf', e.target, '3mpcJXT0ps68PAu6q')
+        emailjs.sendForm('service_94r0tcu', 'template_8zdznk4', e.target, '3mpcJXT0ps68PAu6q')
             .then((result) => {
                 console.log(result.text);
 

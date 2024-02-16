@@ -19,15 +19,17 @@ public class Testimonial {
     private String name;
     private String designation;
     private String message;
+    private Status status;
 
     public Testimonial() {
         this.testimonialIdentifier=new TestimonialIdentifier();
     }
 
-    public Testimonial(String name, String designation, String message) {
+    public Testimonial(String name, String designation, String message, Status status) {
         this.testimonialIdentifier=new TestimonialIdentifier();
         this.name = name;
         this.designation = designation;
         this.message = message;
+        this.status = status;
     }
 }

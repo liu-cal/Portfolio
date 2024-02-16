@@ -4,6 +4,7 @@ import { toast } from 'react-toastify'
 import axios from "axios"
 import { useState, useEffect } from "react"
 import Testimonial from '../components/Testimonial';
+import emailjs from 'emailjs-com';
 
 function BlogPage() {
     const [testimonials, setTestimonials] = useState([])
@@ -42,7 +43,8 @@ function BlogPage() {
                 testimonialId: testimonial.testimonialId,
                 name: testimonial.name,
                 designation: testimonial.designation,
-                message: testimonial.message
+                message: testimonial.message,
+                status: testimonial.status
             }));
 
             setTestimonials(mappedTestimonials)
@@ -106,6 +108,20 @@ function BlogPage() {
             )
             console.log('Response:', response.data)
 
+            const { message, testimonialId, name, designation } = response.data;
+
+            emailjs.send('service_94r0tcu', 'template_puvtcsf', {
+                message: message,
+                testimonial_id: testimonialId,
+                name: name,
+                designation: designation
+            }, '3mpcJXT0ps68PAu6q')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+
             toast.success('Testimonial sent successfully !', {
                 position: 'top-right',
                 autoClose: 5000,
@@ -137,6 +153,7 @@ function BlogPage() {
             <div className='blogpage-container'>
                 <div style={{ width: '47%', backgroundColor: '#D5D5D5', height: '36rem', marginTop: '2%' }}>
                     {currentTestimonials.map((testimonial) => (
+                        testimonial.status === "APPROVED" &&
                         <Testimonial
                             key={testimonial.testimonialId}
                             name={testimonial.name}
