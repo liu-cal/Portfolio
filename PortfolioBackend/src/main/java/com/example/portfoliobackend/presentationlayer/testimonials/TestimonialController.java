@@ -12,8 +12,7 @@ import static org.springframework.http.HttpStatus.CREATED;
 @RestController
 @RequestMapping(path="api/v1/portfolio/testimonials")
 @AllArgsConstructor
-//@CrossOrigin(origins = {"http://localhost:3000", "https://caleb-portfolio.social", "https://caleb-porfolio-yo8gp.ondigitalocean.app"}, allowCredentials = "true")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"http://localhost:3000", "https://www.caleb-portfolio.social", "https://caleb-porfolio-yo8gp.ondigitalocean.app"}, allowCredentials = "true")
 public class TestimonialController {
     private final TestimonialService testimonialService;
 
