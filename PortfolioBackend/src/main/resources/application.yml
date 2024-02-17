@@ -100,7 +100,7 @@ frontend:
   url: https://caleb-portfolio.social/
 
 backend:
-  url: https://api.caleb-portfolio.social/
+  url: https://caleb-porfolio-yo8gp.ondigitalocean.app/
 
 website:
   domain: caleb-portfolio.social
