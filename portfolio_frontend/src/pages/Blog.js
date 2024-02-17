@@ -36,7 +36,9 @@ function BlogPage() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/api/v1/portfolio/testimonials');
+            const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
+
+            const response = await axios.get(`${backendUrl}/api/v1/portfolio/testimonials`);
 
             console.log(response)
             const mappedTestimonials = response.data.map((testimonial) => ({
