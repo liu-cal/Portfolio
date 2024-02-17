@@ -95,10 +95,12 @@ function BlogPage() {
             message: testimonialMessage
         }
 
+        const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
+
         try {
             // Make a POST request using Axios
             const response = await axios.post(
-                `http://localhost:8080/api/v1/portfolio/testimonials`,
+                `${backendUrl}/api/v1/portfolio/testimonials`,
                 testimonialForm,
                 {
                     headers: {

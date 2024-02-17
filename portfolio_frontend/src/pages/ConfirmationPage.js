@@ -11,7 +11,9 @@ function ConfirmationPage() {
 
     const approveTestimonial = async () => {
         try {
-            await axios.put(`http://localhost:8080/api/v1/portfolio/testimonials/${testimonialId}`)
+            const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
+            
+            await axios.put(`${backendUrl}/api/v1/portfolio/testimonials/${testimonialId}`)
 
             toast.success("Testimonial was approved", {
                 position: 'top-right',

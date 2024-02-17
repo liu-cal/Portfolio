@@ -1,7 +1,6 @@
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Contact from "../images/contact.jpg"
-import { useState } from 'react'
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify'
 
