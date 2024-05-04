@@ -481,7 +481,7 @@ p {
   }
 
   .aboutpage-title-container {
-    width: 50%;
+    width: 61%;
     margin-left: 2.5%;
     margin-right: 2.5%;
   }
@@ -502,7 +502,7 @@ p {
   .aboutpage-content {
     margin-top: 0%;
     margin-left: 2.5%;
-    width: 50%;
+    width: 61%;
     margin-right: 2.5%;
   }
 }
@@ -510,17 +510,5 @@ p {
 @media screen and (max-width: 320px) {
   .landingpage-container h2 {
     font-size: 1.5rem;
-  }
-
-  .aboutpage-content {
-    margin-left: 2.5%;
-    width: 49%;
-    margin-right: 2.5%;
-  }
-
-  .aboutpage-title-container {
-    width: 49%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
   }
 }
