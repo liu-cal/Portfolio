@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (max-width: 1024px) {
+  .vertical-timeline-element--custom {
+    width: 30px;
+    height: 30px;
+    margin-left: -2vh;
+    margin-top: 2vh;
+  }
+}

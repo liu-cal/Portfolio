@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Glide from "@glidejs/glide"
 import Footer from "../components/Footer"
-import Navbar from "../components/Navbar"
+import PageNavbar from "../components/PageNavbar"
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import '@glidejs/glide/dist/css/glide.theme.min.css';
 import Dancing from "../images/dancing.jpg"
@@ -26,20 +26,20 @@ function AboutMePage() {
 
     return (
         <div>
-            <Navbar />
+            <PageNavbar />
             <div className='aboutpage-container'>
-                <div style={{ width: '33%' }}>
-                    <div style={{ marginTop: '27%', backgroundColor: '#D5D5D5', height: '73%' }}>
-                        <div style={{ marginLeft: '10%', paddingTop: '3%' }}>
-                            <h1>Goals & Interests</h1>
+                <div className='aboutpage-title-container'>
+                    <div className='aboutpage-title-container-2'>
+                        <div className='aboutpage-title-container-3'>
+                            <h1 className='aboutpage-title'>Goals & Interests</h1>
                         </div>
                     </div>
                 </div>
-                <div style={{ backgroundColor: '#FFFFFF', height: '50rem', width: '40%', marginTop: '1%' }}>
+                <div className='aboutpage-content'>
                     <div style={{ marginTop: '10%', marginLeft: '4%', marginRight: '4%' }}>
                         <h2>Short-term goals</h2>
                         <p>Receive Computer Science & Technology diploma</p>
-                        <p>Get Accepted in Software Engineering at Polytechnique Montreal</p>
+                        <p>Get Accepted in Software Engineering at Polytechnique Montreal &#10003;</p>
                         <h2>Long-term goals</h2>
                         <p>Receive doctorate diploma in Software Engineering</p>
                         <p>Teach Computer Science at a Cegep, University or Professional School Level</p>
@@ -47,7 +47,7 @@ function AboutMePage() {
                         <p>Learning new skills such as skateboarding, dancing, diving, playing basketball, reading, and listening to music</p>
                     </div>
 
-                    <div className="glide" style={{ paddingLeft: '2%', paddingRight: '2%', paddingTop: '5%' }}>
+                    <div className="glide" style={{ paddingLeft: '2%', paddingRight: '2%', paddingTop: '5%', marginBottom: '5%', width: '100%' }}>
                         <div className="glide__track" data-glide-el="track">
                             <ul className="glide__slides">
                                 <li className="glide__slide">
@@ -66,22 +66,6 @@ function AboutMePage() {
                             <button class="glide__bullet" data-glide-dir="=1"></button>
                             <button class="glide__bullet" data-glide-dir="=2"></button>
                         </div>
-                        {/* <div className='glide__arrows' data-glide-el='controls'>
-                            <button
-                                className='glide__arrow glide__arrow--left'
-                                data-glide-dir='<'
-                                style={{ color: '#000000' }}
-                            >
-                                {`<`}
-                            </button>
-                            <button
-                                className='glide__arrow glide__arrow--right'
-                                data-glide-dir='>'
-                                style={{ color: '#000000' }}
-                            >
-                                {`>`}
-                            </button>
-                        </div> */}
                     </div>
                 </div>
             </div>

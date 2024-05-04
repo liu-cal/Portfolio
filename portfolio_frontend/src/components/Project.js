@@ -6,8 +6,8 @@ import VerticalLine from "../components/VerticalLine"
 
 const Project = ({ name, description }) => {
     return (
-        <div style={{ marginTop: '5%', marginLeft: '4%', display: 'flex', flexDirection: 'row', gap: '4%', marginRight: '4%' }}>
-            <div style={{ fontSize: '1.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <div className='project'>
+            <div className='project-title-container'>
                 <p className='project-title'>{name}</p>
             </div>
             <VerticalLine />

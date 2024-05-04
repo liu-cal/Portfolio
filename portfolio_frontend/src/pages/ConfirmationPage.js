@@ -1,5 +1,5 @@
 import Footer from "../components/Footer"
-import Navbar from "../components/Navbar"
+import PageNavbar from "../components/PageNavbar"
 import { useLocation } from 'react-router-dom';
 import axios from "axios"
 import { toast } from 'react-toastify'
@@ -12,7 +12,7 @@ function ConfirmationPage() {
     const approveTestimonial = async () => {
         try {
             const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
-            
+
             await axios.put(`${backendUrl}/api/v1/portfolio/testimonials/${testimonialId}`)
 
             toast.success("Testimonial was approved", {
@@ -42,7 +42,7 @@ function ConfirmationPage() {
 
     return (
         <div>
-            <Navbar />
+            <PageNavbar />
             <div>
                 <button onClick={() => { approveTestimonial() }}>Approve</button>
             </div>

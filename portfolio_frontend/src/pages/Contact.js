@@ -1,5 +1,5 @@
 import Footer from "../components/Footer"
-import Navbar from "../components/Navbar"
+import PageNavbar from "../components/PageNavbar"
 import Contact from "../images/contact.jpg"
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify'
@@ -49,10 +49,10 @@ function ContactPage() {
 
     return (
         <div>
-            <Navbar />
+            <PageNavbar />
             <div className='contactpage-container'>
-                <div style={{ width: '65%', backgroundColor: '#D9C9BB' }}>
-                    <div style={{ backgroundColor: '#BFA48D', height: '80%', marginLeft: '8%', marginRight: '15%', marginTop: '7%', display: 'flex', justifyContent: 'center' }}>
+                <div className='contactpage-image'>
+                    <div className='contactpage-image-container'>
                         <img src={Contact} style={{ display: 'block', width: '100%' }} />
                     </div>
                     <div style={{ backgroundColor: '#F3EDE9' }}>
@@ -94,7 +94,7 @@ function ContactPage() {
                                 className='contact-input'
                                 style={{ paddingBottom: '20%' }}
                             />
-                            <input type="submit" value="submit" style={{ backgroundColor: '#61615F', color: '#FFFFFF', width: '20%', paddingTop: '1%', paddingBottom: '1%', marginLeft: '7%', marginTop: '1.5%' }} />
+                            <input type="submit" value="submit" className='submit-btn' />
                         </form>
                     </div>
                 </div>

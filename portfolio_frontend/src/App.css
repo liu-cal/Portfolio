@@ -3,6 +3,7 @@
 }
 
 .navbar {
+  width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1.25rem;
@@ -21,6 +22,7 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   justify-content: flex-end;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -28,6 +30,28 @@
     display: block;
     display: flex;
   }
+}
+
+@media (min-width: 768px) {
+  .navbar-container {
+    padding: 1%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navline {
+    display: none;
+  }
+}
+
+.contactpage-image-container {
+  background-color: #BFA48D;
+  height: 80%;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-element {
@@ -79,21 +103,31 @@
   display: flex;
   flex-direction: row;
   height: 40rem;
+  width: 100%;
 }
 
 .aboutpage-container {
   display: flex;
   flex-direction: row;
   background-color: #D9C9BB;
+  width: 100%;
+}
+
+.aboutpage-content {
+  background-color: #FFFFFF;
+  height: 50rem;
+  width: 40%;
+  margin-top: 1%;
+  height: 100%;
 }
 
 .skillspage-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #858585;
   width: 85%;
   margin: auto;
-  height: 100rem;
+  height: 200%;
 }
 
 .blogpage-container {
@@ -126,6 +160,8 @@
   gap: 2rem;
   justify-content: center;
   margin-top: 5%;
+  width: 100%;
+  margin-bottom: 2%;
 }
 
 h1,
@@ -149,6 +185,7 @@ p {
   text-justify: inter-word;
   margin-top: 0%;
   margin-bottom: 0%;
+  margin-right: 12%;
 }
 
 .contact-form {
@@ -207,4 +244,283 @@ p {
 
 .pagination li.active {
   font-weight: bold;
+}
+
+.contactpage-image {
+  width: 65%;
+  background-color: #D9C9BB;
+}
+
+.navline {
+  margin: 5px 0;
+  border: 0.5px solid #8F7B6A;
+  width: 6rem;
+}
+
+.submit-btn {
+  background-color: #61615F;
+  color: #FFFFFF;
+  width: 20%;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  margin-left: 7%;
+  margin-top: 1.5%;
+}
+
+.blogpage-list {
+  width: 47%;
+  background-color: #D5D5D5;
+  height: 36rem;
+  margin-top: 2%;
+}
+
+.blogpage-form {
+  width: 47%;
+  height: 40rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .blog-form {
+    gap: 1rem;
+  }
+
+  .blogpage-form {
+    margin-bottom: 5%;
+  }
+}
+
+.landingpage-container h2 {
+  margin-top: 5%;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+
+#tsparticles {
+  height: 100%;
+}
+
+.vertical-timeline-icon {
+  color: black;
+  background-color: black;
+}
+
+.skillspage-qualifications {
+  display: flex;
+  flex-direction: row
+}
+
+.qualifications-title {
+  background-color: #F3EDE9;
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 10%
+}
+
+.qualifications-content {
+  background-color: #FFFFFF;
+  width: 50%;
+  margin-top: 2%;
+}
+
+.project {
+  margin-top: 5%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+  margin-right: 4%;
+  width: 100%;
+}
+
+.project-title-container {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hackathon {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  border-radius: 10px;
+  padding: 10px;
+  transition: border-color 0.5s ease;
+  margin: 0px 2px;
+}
+
+.hackathon-container {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: auto;
+}
+
+.aboutpage-title-container {
+  width: 33%;
+}
+
+.aboutpage-title-container-2 {
+  margin-top: 27%;
+  background-color: #D5D5D5;
+  height: 73%;
+}
+
+.aboutpage-title-container-3 {
+  margin-left: 10%;
+  padding-top: 3%;
+}
+
+@media screen and (max-width: 728px) {
+  .contactpage-container {
+    display: grid;
+    grid-column: 1;
+  }
+
+  .contactpage-image {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 25%;
+  }
+
+  #basic-navbar-nav {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .blogpage-container {
+    display: grid;
+    grid-column: 1;
+  }
+
+  .blogpage-list {
+    grid-row: 2/3;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .blogpage-form {
+    grid-row: 1/2;
+    width: 100%;
+  }
+
+  .landingpage-container h2 {
+    font-size: 2rem;
+  }
+
+  .landingpage-container img {
+    width: 70%;
+  }
+
+  .skillspage-qualifications {
+    display: grid;
+    grid-column: 1;
+  }
+
+  .qualifications-title {
+    width: 80%;
+  }
+
+  .qualifications-content {
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 0%;
+  }
+
+  .project {
+    margin-bottom: 10%;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .project-description {
+    margin-right: 2%;
+  }
+
+  .project-title-container {
+    margin-bottom: 5%;
+  }
+
+  .aboutpage-content {
+    margin-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .project {
+    margin-bottom: 10%;
+  }
+
+  .hackathon-container {
+    flex-direction: column;
+  }
+
+  .hackathon {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactpage-image-container {
+    margin-right: 8%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .aboutpage-container {
+    display: grid;
+    grid-column: 1;
+    height: 100%;
+    gap: 0;
+    padding-bottom: 6%;
+  }
+
+  .aboutpage-title-container {
+    width: 50%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .aboutpage-title-container-2 {
+    margin-top: 10%;
+  }
+
+  .aboutpage-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutpage-title-container-3 {
+    margin-left: 0%;
+  }
+
+  .aboutpage-content {
+    margin-top: 0%;
+    margin-left: 2.5%;
+    width: 50%;
+    margin-right: 2.5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .landingpage-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutpage-content {
+    margin-left: 2.5%;
+    width: 49%;
+    margin-right: 2.5%;
+  }
+
+  .aboutpage-title-container {
+    width: 49%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
 }
