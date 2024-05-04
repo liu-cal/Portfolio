@@ -511,4 +511,16 @@ p {
   .landingpage-container h2 {
     font-size: 1.5rem;
   }
+
+  .aboutpage-content {
+    margin-left: 2.5%;
+    width: 61%;
+    margin-right: 2.5%;
+  }
+
+  .aboutpage-title-container {
+    width: 61%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
 }
