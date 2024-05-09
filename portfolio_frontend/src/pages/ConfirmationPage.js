@@ -13,7 +13,8 @@ function ConfirmationPage() {
         try {
             const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
 
-            await axios.put(`${backendUrl}/api/v1/portfolio/testimonials/${testimonialId}`)
+            const response = await axios.put(`${backendUrl}/api/v1/portfolio/testimonials/${testimonialId}`)
+            console.log(response)
 
             toast.success("Testimonial was approved", {
                 position: 'top-right',
@@ -43,8 +44,8 @@ function ConfirmationPage() {
     return (
         <div>
             <PageNavbar />
-            <div>
-                <button onClick={() => { approveTestimonial() }}>Approve</button>
+            <div className='confirmation-container'>
+                <button className='approve-btn' onClick={() => { approveTestimonial() }}>Approve</button>
             </div>
             <Footer />
         </div>
