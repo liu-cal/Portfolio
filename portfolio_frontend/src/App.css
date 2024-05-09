@@ -380,6 +380,30 @@ p {
   padding-top: 3%;
 }
 
+@media screen and (max-width: 1024px) {
+  .project {
+    margin-bottom: 10%;
+  }
+
+  .hackathon-container {
+    flex-direction: column;
+  }
+
+  .hackathon {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactpage-image-container {
+    margin-right: 8%;
+  }
+
+  .blogpage-list {
+    padding-top: 4%;
+  }
+}
+
 @media screen and (max-width: 728px) {
   .contactpage-container {
     display: grid;
@@ -457,36 +481,6 @@ p {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .project {
-    margin-bottom: 10%;
-  }
-
-  .hackathon-container {
-    flex-direction: column;
-  }
-
-  .hackathon {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contactpage-image-container {
-    margin-right: 8%;
-  }
-
-  .blogpage-list {
-    padding-top: 4%;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .blogpage-list {
-    padding-top: 13%;
-  }
-}
-
 @media screen and (max-width: 425px) {
   .aboutpage-container {
     display: grid;
@@ -524,6 +518,12 @@ p {
 
   .blogpage-list {
     padding-top: 17%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .blogpage-list {
+    padding-top: 13%;
   }
 }
 
