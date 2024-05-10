@@ -80,6 +80,24 @@ function SkillsPage() {
                                 className="vertical-timeline-element--work"
                                 contentStyle={{ background: 'white', color: 'black', border: "solid 2px black" }}
                                 contentArrowStyle={{ borderRight: '7px solid  black' }}
+                                date="February 2024 - May 2024"
+                                iconStyle={{
+                                    background: 'black', color: '#fff'
+                                }}
+                            >
+                                <h3 className="vertical-timeline-element-title">Web Developer Intern - East West Quebec</h3>
+                                <h4 className="vertical-timeline-element-subtitle">Longueuil, CA</h4>
+                                <p>
+                                    Operational Excellence Team
+                                </p>
+                                <p>
+                                    Full-stack, C#, Blazor Syncfusion, Web API, MVC, EPPlus, Sql Server Management Studio 19
+                                </p>
+                            </VerticalTimelineElement>
+                            <VerticalTimelineElement
+                                className="vertical-timeline-element--work"
+                                contentStyle={{ background: 'white', color: 'black', border: "solid 2px black" }}
+                                contentArrowStyle={{ borderRight: '7px solid  black' }}
                                 date="2021 - present"
                                 iconStyle={{
                                     background: 'black', color: '#fff'
@@ -88,23 +106,10 @@ function SkillsPage() {
                                 <h3 className="vertical-timeline-element-title">Tutor</h3>
                                 <h4 className="vertical-timeline-element-subtitle">Longueuil, CA</h4>
                                 <p>
-                                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                                    Math, French, English, Science
                                 </p>
-                            </VerticalTimelineElement>
-
-                            <VerticalTimelineElement
-                                className="vertical-timeline-element--work"
-                                contentStyle={{ background: 'white', color: 'black', border: "solid 2px black" }}
-                                contentArrowStyle={{ borderRight: '7px solid  black' }}
-                                date="February 2024 - May 2024"
-                                iconStyle={{
-                                    background: 'black', color: '#fff'
-                                }}
-                            >
-                                <h3 className="vertical-timeline-element-title">Software Developer Intern</h3>
-                                <h4 className="vertical-timeline-element-subtitle">Longueuil, CA</h4>
                                 <p>
-                                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                                    Support, Compassion, Open-mindedness, Leadership, Active listening, Patience
                                 </p>
                             </VerticalTimelineElement>
                         </VerticalTimeline>
