@@ -61,7 +61,7 @@ function ContactPage() {
                     <div style={{ backgroundColor: '#F3EDE9' }}>
                     </div>
                 </div>
-                <div style={{ height: '40rem' }}>
+                <div style={{ height: '100%', paddingBottom: '5%' }}>
                     <div style={{ width: '80%', margin: 'auto', marginTop: '13%' }}>
                         <h1>
                             {t('Contact.contact-title')}
