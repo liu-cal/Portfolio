@@ -286,6 +286,21 @@ p {
   height: 40rem;
 }
 
+@media screen and (min-width: 2560px) {
+  .blogpage-form {
+    width: 47%;
+    height: 100%;
+  }
+
+  .blogpage-list {
+    height: 55rem;
+  }
+
+  .landingpage-container {
+    height: 75rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .blog-form {
     gap: 1rem;
