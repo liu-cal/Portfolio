@@ -5,8 +5,10 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import Testimonial from '../components/Testimonial';
 import emailjs from 'emailjs-com';
+import { useTranslation } from 'react-i18next';
 
 function BlogPage() {
+    const { t, i18n } = useTranslation();
     const [testimonials, setTestimonials] = useState([])
     const [currentPage, setCurrentPage] = useState(1);
     const testimonialsPerPage = 2;
@@ -40,7 +42,6 @@ function BlogPage() {
 
             const response = await axios.get(`${backendUrl}/api/v1/portfolio/testimonials`);
 
-            console.log(response)
             const mappedTestimonials = response.data.map((testimonial) => ({
                 testimonialId: testimonial.testimonialId,
                 name: testimonial.name,
@@ -52,7 +53,7 @@ function BlogPage() {
             setTestimonials(mappedTestimonials)
 
         } catch (error) {
-            toast.error('Error Loading Data', {
+            toast.error(t('toast-loading-error'), {
                 position: 'top-right',
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -77,7 +78,7 @@ function BlogPage() {
         let testimonialMessage = document.getElementById('message').value
 
         if (testimonialName === "" || testimonialDesignation === "" || testimonialMessage === "") {
-            toast.error('One of the fields is empty !', {
+            toast.error(t('toast-validation-error'), {
                 position: 'top-right',
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -110,7 +111,6 @@ function BlogPage() {
                     },
                 }
             )
-            console.log('Response:', response.data)
 
             const { message, testimonialId, name, designation } = response.data;
 
@@ -121,12 +121,10 @@ function BlogPage() {
                 designation: designation
             }, '3mpcJXT0ps68PAu6q')
                 .then((result) => {
-                    console.log(result.text);
                 }, (error) => {
-                    console.log(error.text);
                 });
 
-            toast.success('Testimonial sent successfully !', {
+            toast.success(t('toast-success'), {
                 position: 'top-right',
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -138,7 +136,7 @@ function BlogPage() {
             })
         } catch (error) {
             console.error('Error:', error)
-            toast.error('Error something happened', {
+            toast.error(t('toast-post-error'), {
                 position: 'top-right',
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -198,16 +196,20 @@ function BlogPage() {
                 </div>
                 <div className='blogpage-form'>
                     <div style={{ width: '80%', margin: 'auto', marginTop: '10%' }}>
-                        <h1 style={{ marginTop: '0%' }}>Testimonial</h1>
-                        <h3>Feel free to share your thoughts about me!</h3>
+                        <h1 style={{ marginTop: '0%' }}>
+                            {t('Blog.blog-title')}
+                        </h1>
+                        <h3>
+                            {t('Blog.blog-subtitle')}
+                        </h3>
                         <form className='blog-form' onSubmit={handleSubmit}>
                             <input
-                                placeholder='Name'
+                                placeholder={t('Blog.blog-name')}
                                 className='blog-input'
                                 id="name"
                             />
                             <input
-                                placeholder='Designation'
+                                placeholder={t('Blog.blog-designation')}
                                 className='blog-input'
                                 id="designation"
                             />
@@ -217,7 +219,9 @@ function BlogPage() {
                                 style={{ paddingBottom: '20%' }}
                                 id="message"
                             />
-                            <button type="submit" className='submit-btn'>submit</button>
+                            <button type="submit" className='submit-btn'>
+                                {t('Blog.blog-btn')}
+                            </button>
                         </form>
                     </div>
                 </div>

@@ -5,18 +5,22 @@ import NavElement from './NavElement'
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import { Link as RouterLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
+import VerticalLine from './VerticalLine';
 
 function PageNavbar() {
+    const { t, i18n } = useTranslation();
+    const [language, setLanguage] = useState(i18n.language);
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+        setLanguage(lng);
+    }
+
     return (
         <Navbar expand="lg" className='navbar-background'>
             <Container>
-                {/* normal version nav bar */}
-                {/* <div
-                    style={{ alignItems: 'center' }}
-                    className="navbar hidden lg-flex"
-                > */}
                 <Navbar.Brand style={{ fontFamily: 'Istok Web, sans-serif', letterSpacing: '5px', textTransform: 'uppercase', display: 'flex', flexDirection: 'column', marginLeft: '1.25rem' }}>
-                    {/* <div > */}
                     <Link
                         className="navbar-element"
                         to={'/'}
@@ -29,15 +33,16 @@ function PageNavbar() {
                     >
                         Liu
                     </Link>
-                    {/* </div> */}
                 </Navbar.Brand>
+                <div style={{ display: 'flex', flexDirection: 'row', gap: '5px' }}>
+                    <a style={{ color: '#4A4A4A' }}
+                        onClick={() => changeLanguage('en')}>EN</a>
+                    <div style={{ borderLeft: '1px #4A4A4A solid', margin: '0em' }}></div>
+                    <a style={{ color: '#4A4A4A' }}
+                        onClick={() => changeLanguage('fr')}>FR</a>
+                </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" style={{ backgroundColor: '#F3EDE9' }}>
-
-                    {/* <div
-                        style={{ letterSpacing: '1px' }}
-                        className=""
-                    > */}
                     <Nav className="me-auto navbar-container" style={{ letterSpacing: '1px' }}>
 
                         <Nav.Link>

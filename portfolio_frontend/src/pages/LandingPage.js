@@ -4,8 +4,10 @@ import Profile from "../images/profile.jpg"
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 function LandingPage() {
+    const { t, i18n } = useTranslation();
     const [init, setInit] = useState(false);
 
     // this should be run only once per application lifetime
@@ -109,7 +111,9 @@ function LandingPage() {
                     <div style={{ width: '50%', backgroundColor: '#BFA48D' }}>
                         <div style={{ width: '80%', margin: 'auto' }}>
                             <h2>Caleb Liu</h2>
-                            <h3>Student in Computer Science & Technology</h3>
+                            <h3>
+                                {t('Home.description')}
+                            </h3>
                             <img src={Profile} width="50%" style={{ display: 'block', margin: 'auto', marginTop: '10%' }} />
                         </div>
                     </div>

@@ -7,8 +7,10 @@ import '@glidejs/glide/dist/css/glide.theme.min.css';
 import Dancing from "../images/dancing.jpg"
 import Reading from "../images/reading.jpeg"
 import Working from "../images/library.jpg"
+import { useTranslation } from 'react-i18next';
 
 function AboutMePage() {
+    const { t, i18n } = useTranslation();
     const [slider] = useState(new Glide(`.glide`, {
         type: 'carousel',
         focusAt: 'center',
@@ -31,20 +33,39 @@ function AboutMePage() {
                 <div className='aboutpage-title-container'>
                     <div className='aboutpage-title-container-2'>
                         <div className='aboutpage-title-container-3'>
-                            <h1 className='aboutpage-title'>Goals & Interests</h1>
+                            <h1 className='aboutpage-title'>
+                                {t('About.about-title')}
+                            </h1>
                         </div>
                     </div>
                 </div>
                 <div className='aboutpage-content'>
                     <div style={{ marginTop: '10%', marginLeft: '4%', marginRight: '4%' }}>
-                        <h2>Short-term goals</h2>
-                        <p>Receive Computer Science & Technology diploma</p>
-                        <p>Get Accepted in Software Engineering at Polytechnique Montreal &#10003;</p>
-                        <h2>Long-term goals</h2>
-                        <p>Receive doctorate diploma in Software Engineering</p>
-                        <p>Teach Computer Science at a Cegep, University or Professional School Level</p>
-                        <h2>Hobbies</h2>
-                        <p>Learning new skills such as skateboarding, dancing, diving, playing basketball, reading, and listening to music</p>
+                        <h2>
+                            {t('About.short-term-goals')}
+                        </h2>
+                        <p>
+                            {t('About.short-term-goal-1')}
+                        </p>
+                        <p>
+                            {t('About.short-term-goal-2')}
+                            &nbsp;&#10003;
+                        </p>
+                        <h2>
+                            {t('About.long-term-goals')}
+                        </h2>
+                        <p>
+                            {t('About.long-term-goal-1')}
+                        </p>
+                        <p>
+                            {t('About.long-term-goal-2')}
+                        </p>
+                        <h2>
+                            {t('About.hobbies-title')}
+                        </h2>
+                        <p>
+                            {t('About.hobbies')}
+                        </p>
                     </div>
 
                     <div className="glide" style={{ paddingLeft: '2%', paddingRight: '2%', paddingTop: '5%', marginBottom: '5%', width: '100%' }}>

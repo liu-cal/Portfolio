@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Hackathon = ({ year, name, description }) => {
+    const { t, i18n } = useTranslation();
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -22,7 +24,9 @@ const Hackathon = ({ year, name, description }) => {
                 {isHovered && (
                     <>
                         <p style={{ textAlign: 'center' }}>{name}</p>
-                        <p style={{ textAlign: 'justify' }}>{description}</p>
+                        <p style={{ textAlign: 'justify' }}>
+                            {t(`Skills.${description}-description`)}
+                        </p>
                     </>
                 )}
             </div>

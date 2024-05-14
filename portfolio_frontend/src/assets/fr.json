@@ -1,0 +1,56 @@
+{
+    "About-nav": "À propos",
+    "Skills-nav": "Compétences",
+    "Blog-nav": "Blog",
+    "Contact-nav": "Contact",
+    "Home": {
+        "description": "Étudiant en Informatique et Technologie"
+    },
+    "About": {
+        "about-title": "Objectifs et intérêts",
+        "short-term-goals": "Objectifs à court terme",
+        "short-term-goal-1": "Obtenir un diplôme en informatique et technologie",
+        "short-term-goal-2": "Soyez accepté en génie logiciel à Polytechnique Montréal",
+        "long-term-goals": "Objectifs à long terme",
+        "long-term-goal-1": "Obtenir un doctorat en génie logiciel",
+        "long-term-goal-2": "Enseigner l'informatique au niveau cégep, universitaire ou école professionnelle",
+        "hobbies-title": "Loisirs",
+        "hobbies": "Apprendre de nouvelles compétences telles que faire du skateboard, danser, plonger, jouer au basket-ball, lire et écouter de la musique"
+    },
+    "Skills": {
+        "skills-title": "Projets et Qualifications",
+        "Weather Wizard-description": "Application Web backend/frontend utilisant Python, Raspberry PI, SQLite, capteur de caméra ESP-32 et capteur de température/humidité DHT-22 pour vérifier s'il existe une corrélation entre la température et l'humidité de la météo et la couleur moyenne des pixels des images du ciel",
+        "Restaurant-description": "Application mobile IOS utilisant l'architecture de conception Swift, MVVM (Model-View-Viewmodel) pour simuler un service de livraison de nourriture en ligne",
+        "Contact Manager-description": "Application de bureau utilisant C#, WPF et ADO.NET pour simuler une liste de contacts et ses fonctionnalités impliquant CRUD et autres comme la possibilité d'exporter les contacts existants dans un fichier CSV",
+        "hackathon-title": "Expérience Hackathon",
+        "hackathon1-description": "J'ai remporté la première place avec mon équipe en créant un site Web informatif ReactJS sur les droits des enfants de l'UNICEF.",
+        "hackathon2-description": "J'ai remporté la deuxième place avec mon équipe en créant un site ReactJS qui contient des actualités et des articles liés à l'UNICEF et qui permet de les noter",
+        "hackathon3-description": "Simulation de compétition mondiale en réseau consistant à documenter et à pirater un système par un chapeau blanc",
+        "work-experience-title": "Expérience Professionnelle",
+        "work1-duration": "Février 2024 - mai 2024",
+        "work1-title": "Stagiaire Développeur Web - Est Ouest Québec",
+        "work1-story": "Équipe d'excellence opérationnelle",
+        "work2-duration": "2021 - présent",
+        "work2-title": "Tuteur",
+        "work2-story": "Mathématiques, français, anglais, sciences",
+        "work2-description": "Support, Compassion, Ouverture d'esprit, Leadership, Écoute active, Patience"
+    },
+    "Blog": {
+        "blog-title": "Témoignage",
+        "blog-subtitle": "N'hésitez pas à partager vos impressions sur moi !",
+        "blog-name": "Nom",
+        "blog-designation": "Désignation",
+        "blog-btn": "soumettre"
+    },
+    "Contact": {
+        "contact-title": "Contactez moi",
+        "contact-subtitle": "N'hésitez pas à me contacter directement pour toute demande de renseignements ou d'assistance.",
+        "contact-fname": "Prénom",
+        "contact-lname": "Nom de famille",
+        "contact-btn": "soumettre"
+    },
+    "toast-post-error": "Erreur, quelque chose s'est produit",
+    "toast-validation-error": "Un des champs est vide !",
+    "toast-loading-error": "Erreur de chargement des données",
+    "toast-success": "Témoignage envoyé avec succès !"
+}

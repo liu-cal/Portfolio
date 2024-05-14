@@ -9,6 +9,7 @@ import ContactPage from './pages/Contact';
 import AboutMePage from './pages/AboutMePage';
 import BlogPage from './pages/Blog';
 import ConfirmationPage from './pages/ConfirmationPage';
+import React, { useState } from 'react';
 
 function App() {
   return (

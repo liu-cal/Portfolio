@@ -1,0 +1,56 @@
+{
+    "About-nav": "About",
+    "Skills-nav": "Skills",
+    "Blog-nav": "Blog",
+    "Contact-nav": "Contact",
+    "Home": {
+        "description": "Student in Computer Science & Technology"
+    },
+    "About": {
+        "about-title": "Goals & Interests",
+        "short-term-goals": "Short-term goals",
+        "short-term-goal-1": "Receive Computer Science & Technology diploma",
+        "short-term-goal-2": "Get Accepted in Software Engineering at Polytechnique Montreal",
+        "long-term-goals": "Long-term goals",
+        "long-term-goal-1": "Receive doctorate diploma in Software Engineering",
+        "long-term-goal-2": "Teach Computer Science at a Cegep, University or Professional School Level",
+        "hobbies-title": "Hobbies",
+        "hobbies": "Learning new skills such as skateboarding, dancing, diving, playing basketball, reading, and listening to music"
+    },
+    "Skills": {
+        "skills-title": "Projects & Qualifications",
+        "Weather Wizard-description": "Backend/Frontend Web Application using Python, Raspberry PI, SQLite, ESP-32 Camera sensor, and DHT-22 Temperature/Humidity sensor to verify if there's a correlation between the weather's temperature and humidity and the average pixel color of sky images",
+        "Restaurant-description": "IOS Mobile Application using Swift, MVVM (Model-View-Viewmodel) design architecture to simulate an online food delivery service",
+        "Contact Manager-description": "Desktop Application using C#, WPF, and ADO.NET to simulate a contact list and its functionalities involving CRUD and others such as the ability to export the existing contacts in a CSV file",
+        "hackathon-title": "Hackathon Experience",
+        "hackathon1-description": "Won first place with my team by creating an informative ReactJS website on UNICEF children rights",
+        "hackathon2-description": "Won second place with my team by creating a ReactJS website that contains news and articles related to UNICEF and that allows the ability to rate them",
+        "hackathon3-description": "Network global competition simulation of white hat documenting and hacking into a system",
+        "work-experience-title": "Work Experience",
+        "work1-duration": "February 2024 - May 2024",
+        "work1-title": "Web Developer Intern - East West Quebec",
+        "work1-story": "Operational Excellence Team",
+        "work2-duration": "2021 - present",
+        "work2-title": "Tutor",
+        "work2-story": "Math, French, English, Science",
+        "work2-description": "Support, Compassion, Open-mindedness, Leadership, Active listening, Patience"
+    },
+    "Blog": {
+        "blog-title": "Testimonial",
+        "blog-subtitle": "Feel free to share your thoughts about me!",
+        "blog-name": "Name",
+        "blog-designation": "Designation",
+        "blog-btn": "submit"
+    },
+    "Contact": {
+        "contact-title": "Contact Me",
+        "contact-subtitle": "Feel free to reach out to me directly for any inquiries or assistance.",
+        "contact-fname": "First Name",
+        "contact-lname": "Last Name",
+        "contact-btn": "submit"
+    },
+    "toast-post-error": "Error something happened",
+    "toast-validation-error": "One of the fields is empty !",
+    "toast-loading-error": "Error Loading Data",
+    "toast-success": "Testimonial sent successfully !"
+}
